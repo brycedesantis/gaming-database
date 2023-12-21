@@ -2,7 +2,7 @@ import "../styles/Navbar.css"
 
 export default function Navbar() {
 	return (
-		<header style={{ width: "100%" }}>
+		<header style={{ width: "100%", gridColumn: "1/3" }}>
 			<div className="header-item header-container">
 				<div className="header-item">
 					<h1>I.T.S Gaming</h1>
