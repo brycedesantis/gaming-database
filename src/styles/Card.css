@@ -1,0 +1,27 @@
+.card-element {
+	max-width: 600px;
+	position: relative;
+}
+
+.card-img img {
+	width: 100%;
+	object-fit: cover;
+	background-position: center;
+	aspect-ratio: 1.7 / 1;
+}
+
+.card-rating {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.card-genre {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.card-genre h5 {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
