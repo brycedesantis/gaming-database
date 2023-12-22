@@ -1,19 +1,24 @@
+import { Link } from "react-router-dom"
 import "../styles/Drawer.css"
 
 export default function Drawer() {
-	const listItems = ["Popular games", "Coming soon", "All games"]
+	const listItems = {
+		"popular-games": "Popular games",
+		"coming-soon": "Coming soon",
+		"all-games": "All games",
+	}
 
 	return (
 		<div className="drawer-sidebar">
-			<h1>Home</h1>
+			<Link to={"/"}>
+				<h1>Home</h1>
+			</Link>
 			<ul className="drawer-list">
-				{listItems.map((item, index) => {
-					return (
-						<li className="drawer-list-items" key={index}>
-							{item}
-						</li>
-					)
-				})}
+				{Object.keys(listItems).map((item, index) => (
+					<li className="drawer-list-items" key={index}>
+						{listItems[item]}
+					</li>
+				))}
 			</ul>
 		</div>
 	)

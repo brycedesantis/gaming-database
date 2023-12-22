@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../styles/Navbar.css"
 
 export default function Navbar() {
@@ -5,7 +6,9 @@ export default function Navbar() {
 		<header style={{ width: "100%", gridColumn: "1/3" }}>
 			<div className="header-item header-container">
 				<div className="header-item">
-					<h1>I.T.S Gaming</h1>
+					<Link to={"/"}>
+						<h1>I.T.S Gaming</h1>
+					</Link>
 				</div>
 				<div className="header-item header-search-box">
 					<form className="header-form">

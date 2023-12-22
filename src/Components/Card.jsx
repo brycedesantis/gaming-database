@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom"
 import "../styles/Card.css"
 import { v4 as uuidv4 } from "uuid"
 
-export default function Card({ title, genre, rating, imageSrc }) {
+export default function Card({ title, genre, rating, imageSrc, slug }) {
 	return (
 		<div className="card-element">
 			<div className="card-img">
-				<img src={imageSrc} alt={`${title} cover art`} />
+				<Link to={`game-details/${slug}`}>
+					<img src={imageSrc} alt={`${title} cover art`} />
+				</Link>
 			</div>
 			<div className="card-platform-icons"></div>
 			<div className="card-info">
