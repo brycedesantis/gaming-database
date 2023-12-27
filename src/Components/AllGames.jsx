@@ -30,7 +30,7 @@ export default function AllGames() {
 		setGameList([...saveData])
 	}
 
-	useEffect(() => getGames)
+	useEffect(() => getGames, [])
 
 	return (
 		<main className="content">
