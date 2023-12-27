@@ -39,6 +39,7 @@ export default function AllGames() {
 					<>
 						<Card
 							key={uuidv4}
+							id={game.id}
 							title={game.title}
 							genre={game.genre}
 							rating={game.rating}
